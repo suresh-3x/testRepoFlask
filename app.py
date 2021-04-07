@@ -41,7 +41,7 @@ def get_gallery():
 
 @app.route("/delete/<filename>")
 def delete(filename):
-    target = os.path.join(APP_ROOT, r'images\\' + filename)
+    target = os.path.join(APP_ROOT, r'images/' + filename)
     response = os.remove(target)
     print(target)
     print(response)
